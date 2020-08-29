@@ -43,7 +43,8 @@ namespace Quiz_Lozano_Alejandra
         private void btnLogout_Click(object sender, RoutedEventArgs e)
         {
             {
-                
+                MainWindow w = (MainWindow)Window.GetWindow(this);
+                w.frameMain.NavigationService.Navigate(new Login());
             }
         }
     }

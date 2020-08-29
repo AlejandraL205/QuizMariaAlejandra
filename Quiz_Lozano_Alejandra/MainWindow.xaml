@@ -10,7 +10,7 @@
         Loaded="Window_Loaded">
     <Grid>
         <Label Content="My app" HorizontalAlignment="Center" Margin="21,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
-        <Frame Name="frameMain" Content="" Margin="0,55,0,55" NavigationUIVisibility="Hidden" Source="/Login.xaml"/>
+        <Frame Name="frameMain" Content="" Margin="5,68,5,16" NavigationUIVisibility="Hidden" Source="/Login.xaml" Height="350" Width="790"/>
 
     </Grid>
 </Window>
