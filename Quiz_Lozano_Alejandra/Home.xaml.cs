@@ -27,8 +27,10 @@ namespace Quiz_Lozano_Alejandra
         {
             string productName = txtProductName.Text;
             string category = lblCategory.Content.ToString();
+            string RangePrice = sliPrice.Value.ToString();
+            string DeliverDate = datDeliverDate.ToString();
 
-            txtResults.Text = productName+"\n"+category;
+            txtResults.Text = "Product: " + productName+"\n"+"Category: " + category +"\n" + "Price: " + RangePrice + "Deliver Date: " + DeliverDate;
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
@@ -46,6 +48,11 @@ namespace Quiz_Lozano_Alejandra
                 MainWindow w = (MainWindow)Window.GetWindow(this);
                 w.frameMain.NavigationService.Navigate(new Login());
             }
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            lblPrice.Content = "Range price:" +"\n"+ sliPrice.Value.ToString();
         }
     }
 }
